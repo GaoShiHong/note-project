@@ -2,7 +2,7 @@
   "name": "vitepress-blog",
   "version": "1.0.0",
   "private": true,
-  "author": "粥里有勺糖",
+  "author": "divspan",
   "license": "MIT",
   "scripts": {
     "dev": "vitepress dev docs",
@@ -14,6 +14,9 @@
     "@sugarat/theme": "^0.5.4",
     "element-plus": "^2.7.2",
     "vue": "3.5.12"
+  },
+  "resolutions": {
+    "oh-my-live2d": "^0.17.0"
   },
   "directories": {
     "doc": "docs"

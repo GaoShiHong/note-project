@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 import { blogTheme } from './blog-theme'
 
 // 如果使用 GitHub/Gitee Pages 等公共平台部署
-// 通常需要修改 base 路径，通常为“/仓库名/”
+// 通常需要修改 base 路径，通常为"/仓库名/"
 // 如果项目名已经为 name.github.io 域名，则不需要修改！
 // const base = process.env.GITHUB_ACTIONS === 'true'
 //   ? '/vitepress-blog-sugar-template/'
@@ -18,7 +18,7 @@ export default defineConfig({
   // base,
   lang: 'zh-cn',
   title: '@sugarat/theme',
-  description: '粥里有勺糖的博客主题，基于 vitepress 实现',
+  description: 'divspan的博客主题，基于 vitepress 实现',
   lastUpdated: true,
   // 详见：https://vitepress.dev/zh/reference/site-config#head
   head: [
@@ -32,6 +32,7 @@ export default defineConfig({
       level: [2, 3],
       label: '目录'
     },
+
     // 默认文案修改
     returnToTopLabel: '回到顶部',
     sidebarMenuLabel: '相关文章',
@@ -51,8 +52,16 @@ export default defineConfig({
     socialLinks: [
       {
         icon: 'github',
-        link: 'https://github.com/ATQQ/sugar-blog/tree/master/packages/theme'
+        // link: 'https://github.com/ATQQ/sugar-blog/tree/master/packages/theme'
+        link: 'https://github.com/GaoShiHong'
       }
     ]
+  },
+  // 添加开发服务器配置
+  vite: {
+    server: {
+      host: '0.0.0.0',  // 允许外部 IP 访问
+      port: 5173        // 指定端口号
+    }
   }
 })

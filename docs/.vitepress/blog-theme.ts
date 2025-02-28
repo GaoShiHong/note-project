@@ -6,9 +6,9 @@ import { getThemeConfig } from '@sugarat/theme/node'
 
 // const baseUrl = 'https://sugarat.top'
 // const RSS: Theme.RSSOptions = {
-//   title: '粥里有勺糖',
+//   title: 'divspan',
 //   baseUrl,
-//   copyright: 'Copyright (c) 2018-present, 粥里有勺糖',
+//   copyright: 'Copyright (c) 2018-present, divspan',
 //   description: '你的指尖,拥有改变世界的力量（大前端相关技术分享）',
 //   language: 'zh-cn',
 //   image: 'https://img.cdn.sugarat.top/mdImg/MTY3NDk5NTE2NzAzMA==674995167030',
@@ -31,7 +31,7 @@ const blogTheme = getThemeConfig({
   footer: {
     // message 字段支持配置为HTML内容，配置多条可以配置为数组
     // message: '下面 的内容和图标都是可以修改的噢（当然本条内容也是可以隐藏的）',
-    copyright: 'MIT License | 粥里有勺糖',
+    copyright: 'MIT License | divspan',
     // icpRecord: {
     //   name: '蜀ICP备19011724号',
     //   link: 'https://beian.miit.gov.cn/'
@@ -46,7 +46,7 @@ const blogTheme = getThemeConfig({
   themeColor: 'el-blue',
 
   // 文章默认作者
-  author: '粥里有勺糖',
+  author: 'divspan',
 
   // 友链
   friend: [
@@ -100,6 +100,17 @@ const blogTheme = getThemeConfig({
     ],
     duration: 0
   },
+
+  oml2d: {
+    mobileDisplay: true,
+    models: [
+      {
+        // path: 'https://registry.npmmirror.com/oml2d-models/latest/files/models/Senko_Normals/senko.model3.json'
+        path: 'https://raw.githubusercontent.com/iCharlesZ/vscode-live2d-models/master/model-library/kesshouban/model.json'
+        // path: 'https://raw.githubusercontent.com/iCharlesZ/vscode-live2d-models/master/model-library/bilibili-22/index.json'
+      }
+    ]
+  }
 })
 
 export { blogTheme }
