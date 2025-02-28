@@ -63,5 +63,10 @@ export default defineConfig({
       host: '0.0.0.0',  // 允许外部 IP 访问
       port: 5173        // 指定端口号
     }
-  }
+  },
+  ignoreDeadLinks: true,
+  // 或者指定具体要忽略的链接
+//   ignoreDeadLinks: [
+//     'http://localhost:4873/index'
+//   ]
 })
