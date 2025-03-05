@@ -19,6 +19,7 @@ aiGPT(无需翻墙)：https://kimi.moonshot.cn/chat/cup9t35m2cik7o2c7sdg
 Gemini：https://gemini.google.com/app
 
 ChatGPT：https://chatgpt.com/
+Grok: https://grok.com/
 
 论坛：https://linux.do/t/topic/254112
 
